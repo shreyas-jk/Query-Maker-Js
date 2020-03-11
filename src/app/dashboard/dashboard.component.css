@@ -1,0 +1,104 @@
+.state{
+    /* padding: 15px 25px; */
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #ebf3ec;
+    border: none;
+    border-radius: 15px;
+    
+}
+.color_red{
+    color: red;
+}
+.keyword{
+    color: #0000FF;
+}
+
+
+.output-block{
+    min-height: 50px;
+    font-size: larger;
+    margin-left: 2%;
+    margin-top: 1%;
+    white-space: pre-wrap;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    z-index:1000;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    z-index:1000;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  .more-btn{
+    border-radius: 50px;
+    border: none !important;
+
+  }
+
+  .myButton {
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    /* background: linear-gradient(to bottom, #ffffff 5%, #ffffff 100%); */
+    background-color: #ffffff;
+    border-radius: 6px;
+    display: inline-block;
+    cursor: pointer;
+    color: #8e8e8e;
+    font-family: Calibri;
+    font-size: 17px;
+    padding: 5px 8px;
+    margin-top: 1px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffffff;
+    margin-right: 10px;
+  }
+
+  .myButton:hover {
+    background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+    background-color:#ffffff;
+    color: #1d97ff;
+  }
+  .myButton:active {
+    position:relative;
+    top:1px;
+  }
+  

@@ -1,0 +1,568 @@
+<div class="main-content">
+  <div class="container-fluid">
+      <!-- <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card card-stats">
+                  <div class="card-header card-header-warning card-header-icon">
+                      <div class="card-icon">
+                          <i class="material-icons">content_copy</i>
+                      </div>
+                      <p class="card-category">Used Space</p>
+                      <h3 class="card-title">49/50
+                          <small>GB</small>
+                      </h3>
+                  </div>
+                  <div class="card-footer">
+                      <div class="stats">
+                          <i class="material-icons text-danger">warning</i>
+                          <a href="javascript:void(0)">Get More Space...</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card card-stats">
+                  <div class="card-header card-header-success card-header-icon">
+                      <div class="card-icon">
+                          <i class="material-icons">store</i>
+                      </div>
+                      <p class="card-category">Revenue</p>
+                      <h3 class="card-title">$34,245</h3>
+                  </div>
+                  <div class="card-footer">
+                      <div class="stats">
+                          <i class="material-icons">date_range</i> Last 24 Hours
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card card-stats">
+                  <div class="card-header card-header-danger card-header-icon">
+                      <div class="card-icon">
+                          <i class="material-icons">info_outline</i>
+                      </div>
+                      <p class="card-category">Fixed Issues</p>
+                      <h3 class="card-title">75</h3>
+                  </div>
+                  <div class="card-footer">
+                      <div class="stats">
+                          <i class="material-icons">local_offer</i> Tracked from Github
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card card-stats">
+                  <div class="card-header card-header-info card-header-icon">
+                      <div class="card-icon">
+                          <i class="fa fa-twitter"></i>
+                      </div>
+                      <p class="card-category">Followers</p>
+                      <h3 class="card-title">+245</h3>
+                  </div>
+                  <div class="card-footer">
+                      <div class="stats">
+                          <i class="material-icons">update</i> Just Updated
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div> -->
+      <!-- <div class="row">
+          <div class="col-md-4">
+              <div class="card card-chart">
+                  <div class="card-header card-header-success">
+                      <div class="ct-chart" id="dailySalesChart"></div>
+                  </div>
+                  <div class="card-body">
+                      <h4 class="card-title">Daily Sales</h4>
+                      <p class="card-category">
+                          <span class="text-success"><i class="fa fa-long-arrow-up"></i> 55% </span> increase in today sales.</p>
+                  </div>
+                  <div class="card-footer">
+                      <div class="stats">
+                          <i class="material-icons">access_time</i> updated 4 minutes ago
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card card-chart">
+                  <div class="card-header card-header-warning">
+                      <div class="ct-chart" id="websiteViewsChart"></div>
+                  </div>
+                  <div class="card-body">
+                      <h4 class="card-title">Email Subscriptions</h4>
+                      <p class="card-category">Last Campaign Performance</p>
+                  </div>
+                  <div class="card-footer">
+                      <div class="stats">
+                          <i class="material-icons">access_time</i> campaign sent 2 days ago
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card card-chart">
+                  <div class="card-header card-header-danger">
+                      <div class="ct-chart" id="completedTasksChart"></div>
+                  </div>
+                  <div class="card-body">
+                      <h4 class="card-title">Completed Tasks</h4>
+                      <p class="card-category">Last Campaign Performance</p>
+                  </div>
+                  <div class="card-footer">
+                      <div class="stats">
+                          <i class="material-icons">access_time</i> campaign sent 2 days ago
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div> -->
+      
+      
+        <!-- Connection Module -->
+        
+        <div class="row">
+            <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <mat-form-field>
+                                <input matInput placeholder="Server" name="in_sv" type="text" [(ngModel)]="in_sv">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-lg-3">
+                            <mat-form-field>
+                                <input matInput placeholder="Database" name="in_db" type="text" [(ngModel)]="in_db">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-lg-3">
+                            <mat-form-field>
+                                <input matInput placeholder="User" name="in_usr" type="text" [(ngModel)]="in_usr">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-lg-3">
+                            <mat-form-field>
+                                <input matInput placeholder="Password" name="in_pwd" type="password" [(ngModel)]="in_pwd">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+        <!-- Table Name Module -->
+
+        <div class="col-lg-6 col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <div>
+                    <form #fTab1="ngForm">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <mat-form-field appearance="outline">
+                                    <input matInput placeholder="Enter Left Table Name" name="name" type="text" [(ngModel)]="TableName1" (ngModelChange)="initFormation(TableName1, 'TableName1',$event)">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>  
+        </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <div>
+                        <form #fTab2="ngForm">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <mat-form-field appearance="outline">
+                                        <input matInput placeholder="Enter Right Table Name" name="name" type="text" [(ngModel)]="TableName2"  (ngModelChange)="initFormation(TableName2, 'TableName2',$event)">
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+
+        <!-- First Module -->
+        <div class="col-lg-6 col-md-12">
+            <div class="card">
+
+                <div class="card-header card-header-tabs card-header-success">
+                    <div class="nav-tabs-navigation">
+                        <div class="nav-tabs-wrapper">
+                            <!-- <span class="nav-tabs-title">Table 1</span> -->
+                            <ul class="nav nav-tabs" data-tabs="tabs">
+                                <li class="nav-item">
+                                    <button mat-button (click)="Add1()">
+                                        <i class="material-icons">add</i>
+                                        <div class="ripple-container"></div>
+                                    </button>
+                                </li>
+
+                                <li class="nav-item">
+                                    <button mat-button (click)="Remove1()">
+                                        <i class="material-icons">remove</i>
+                                        <div class="ripple-container"></div>
+                                    </button>
+                                </li>
+                                <!-- <li class="nav-item">
+                                    <a mat-button class="nav-link" href="#messages" data-toggle="tab">
+                                        <i class="material-icons">code</i> Website
+                                        <div class="ripple-container"></div>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a mat-button class="nav-link" href="#settings" data-toggle="tab">
+                                        <i class="material-icons">cloud</i> Server
+                                        <div class="ripple-container"></div>
+                                    </a>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="profile">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                        <div>
+
+                                            <form #f1="ngForm">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            Enter Fields
+                                                        </div>
+                                                        <div class="col-md-2" style="max-width:30%;">
+                                                            Join
+                                                        </div>
+                                                        <div class="col-md-2" style="max-width:30%;">
+                                                            Select
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div *ngFor="let idx = index; let att of tableArray1" >
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <mat-form-field appearance="outline">
+                                                                        <input matInput placeholder="Column {{idx + 1}}" name="TColumnName_zline{{idx + 1}}_" type="text" [(ngModel)]="att.TField1">
+                                                                    </mat-form-field>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                    <div class="form-check">
+                                                                        <label class="form-check-label">
+                                                                            <input class="form-check-input" type="checkbox" name="TJoinKey_zline{{idx + 1}}_" value="1" [(ngModel)]="att.TField2" (change)="addToSelect1(att.TField1, att.TField2)">
+                                                                            <span class="form-check-sign">
+                                                                                <span class="check"></span>
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                    <div class="form-check">
+                                                                        <label class="form-check-label">
+                                                                            <input class="form-check-input" type="checkbox" name="TSelectKey_zline{{idx + 1}}_" value="1" [(ngModel)]="att.TField3">
+                                                                            <span class="form-check-sign">
+                                                                                <span class="check"></span>
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                    </div>
+                                                    <!-- <button mat-raised-button type="submit" class="btn btn-success pull-right">Generate</button>  -->
+                                            </form>
+
+
+                                        </div>
+                                        </td>
+                                        <td class="td-actions text-right">
+                                            <!-- <button mat-raised-button type="button" matTooltip="Remove" [matTooltipPosition]="'above'" class="btn btn-danger btn-link btn-sm btn-just-icon">
+                                                <i class="material-icons">close</i>
+                                            </button> -->
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Second Module -->
+
+        <div class="col-lg-6 col-md-12">
+            <div class="card">
+
+                <div class="card-header card-header-tabs card-header-success">
+                    <div class="nav-tabs-navigation">
+                        <div class="nav-tabs-wrapper">
+                            <!-- <span class="nav-tabs-title">Table 2</span> -->
+                            <ul class="nav nav-tabs" data-tabs="tabs">
+                                <li class="nav-item">
+                                    <button mat-button (click)="Add2()">
+                                        <i class="material-icons">add</i>
+                                        <div class="ripple-container"></div>
+                                    </button>
+                                </li>
+
+                                <li class="nav-item">
+                                      <button mat-button (click)="Remove2()">
+                                          <i class="material-icons">remove</i>
+                                          <div class="ripple-container"></div>
+                                      </button>
+                                  </li>
+                                <!-- <li class="nav-item">
+                                    <a mat-button class="nav-link" href="#messages" data-toggle="tab">
+                                        <i class="material-icons">code</i> Website
+                                        <div class="ripple-container"></div>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a mat-button class="nav-link" href="#settings" data-toggle="tab">
+                                        <i class="material-icons">cloud</i> Server
+                                        <div class="ripple-container"></div>
+                                    </a>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="profile">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                          <div>
+
+                                                <form #f2="ngForm">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                Enter Fields
+                                                            </div>
+                                                            <div class="col-md-2" style="max-width:30%;">
+                                                                Join
+                                                            </div>
+                                                            <div class="col-md-2" style="max-width:30%;">
+                                                                Select
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div *ngFor="let idx = index; let att of tableArray2" >
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <mat-form-field appearance="outline">
+                                                                            <input matInput placeholder="Column {{idx + 1}}" name="TColumnName_zline{{idx + 1}}_" type="text" [(ngModel)]="att.TField1">
+                                                                        </mat-form-field>
+                                                                    </div>
+                                                                    <div class="col-md-2">
+                                                                        <div class="form-check">
+                                                                            <label class="form-check-label">
+                                                                                <input class="form-check-input" type="checkbox" name="TJoinKey_zline{{idx + 1}}_" value="1" [(ngModel)]="att.TField2"  (change)="addToSelect2(att.TField1, att.TField2)">
+                                                                                <span class="form-check-sign">
+                                                                                    <span class="check"></span>
+                                                                                </span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-2">
+                                                                        <div class="form-check">
+                                                                            <label class="form-check-label">
+                                                                                <input class="form-check-input" type="checkbox" name="TSelectKey_zline{{idx + 1}}_" value="1" [(ngModel)]="att.TField3">
+                                                                                <span class="form-check-sign">
+                                                                                    <span class="check"></span>
+                                                                                </span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                        </div>
+                                                        <!-- <button mat-raised-button type="submit" class="btn btn-success pull-right">Generate</button>  -->
+                                                </form>
+                                          </div>
+                                        </td>
+                                        <td class="td-actions text-right">
+                                            <!-- <button mat-raised-button type="button" matTooltip="Remove" [matTooltipPosition]="'above'" class="btn btn-danger btn-link btn-sm btn-just-icon">
+                                                <i class="material-icons">close</i>
+                                            </button> -->
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Join Module -->
+        <div class="card">
+            <div class="card-header card-header-tabs card-header-success">
+                <div class="nav-tabs-navigation">
+                    <div class="nav-tabs-wrapper">
+                        <span class="nav-tabs-title">Join</span>
+                        <ul class="nav nav-tabs" data-tabs="tabs">
+                            <li class="nav-item">
+                                <button mat-button (click)="AddJoin()">
+                                    <i class="material-icons">add</i>
+                                    <div class="ripple-container"></div>
+                                </button>
+                            </li>
+
+                            <li class="nav-item">
+                                    <button mat-button (click)="RemoveJoin()">
+                                        <i class="material-icons">remove</i>
+                                        <div class="ripple-container"></div>
+                                    </button>
+                                </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="profile">
+                        <form #f3="ngForm">
+
+                        <table class="table">
+                            <tbody>
+                                <tr *ngFor="let idx = index; let att of anArray3">
+                                    <td>
+                                        <div class="col-md-10">
+                                        <mat-form-field>
+                                            <mat-label>Join Condition {{idx + 1}} </mat-label>
+                                            <mat-select  [(ngModel)]="att.JField1" name="TJoinTable1_zline{{idx + 1}}_">
+                                                <mat-option *ngFor="let field of join1Fields" [value]="field.value">
+                                                {{field.value}}
+                                                </mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                        </div>
+                                    </td>
+                                    
+                                    <td>
+                                    <div class="col-md-10">
+                                        <mat-form-field>
+                                            <mat-label>Join Condition {{idx + 1}}</mat-label>
+                                            <mat-select [(ngModel)]="att.JField2" name="TJoinTable2_zline{{idx + 1}}_">
+                                                <mat-option *ngFor="let field of join2Fields" [value]="field.value">
+                                                {{field.value}}
+                                                </mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </div>
+                                    </td>
+
+                                    <td>
+                                    <div class="col-md-10" >
+                                            <button (click)="openModal(idx + 1)" class="more-btn">...</button>
+                                    </div>
+    
+                                        <div id="myModal{{idx+ 1}}" class="modal" [(ngModel)]="att.myModal">
+                                            <div class="modal-content">
+                                                <!-- <span class="close" (click)="close(idx + 1)">&times;</span> -->
+
+                                                <mat-select  [(ngModel)]="att.activeJoin" name="TJoinCondition_zline{{idx + 1}}_" placeholder="Default is Equals (=)">
+                                                        <mat-option value="1" (click)="close(idx + 1)">Equals ( = )</mat-option>
+                                                        <mat-option value="2" (click)="close(idx + 1)">Not Equals ( != )</mat-option>
+
+                                                    </mat-select>
+                                            </div>
+                                        </div>
+                                    
+                                    </td>  
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Join -->
+        <div class="card">
+            <div class="card-body">
+                <div>
+                    <div class="row">
+                        <div [ngClass]="{'state': isState=='state1'}" (click)="inner()" >
+                            <img src="../../assets/img/inner.png">
+                        </div>
+                        <div [ngClass]="{'state': isState=='state2'}" (click)="left()">
+                            <img src="../../assets/img/left.png">
+                        </div>
+                        <div [ngClass]="{'state': isState=='state3'}" (click)="right()"> 
+                            <img src="../../assets/img/right.png">
+                        </div>
+                        <div [ngClass]="{'state': isState=='state4'}" (click)="full()">
+                            <img src="../../assets/img/full.png">
+                        </div>
+                        <div [ngClass]="{'state': isState=='state5'}" (click)="cross()">
+                            <img src="../../assets/img/cross.png">
+                        </div>
+                        <div [ngClass]="{'state': isState=='state6'}" (click)="self()">
+                            <img src="../../assets/img/self.png">
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+
+
+        <!-- Submit Module -->
+        <br>
+        <div class="col-lg-3">            
+            <button mat-raised-button type="submit" (click)="executeSql(output)" class="btn btn-warning pull-right">Vaidate</button>                                          
+            <button mat-raised-button type="submit" (click)="onSubmitHeaderTable(f1.value, f2.value, f3.value, fTab1.value, fTab2.value)" class="btn btn-success pull-right">Generate</button>                                          
+            <!-- <button mat-raised-button type="submit" (click)="SchemaFormations('MSI','TestDB','sa','Admin@851','CustomerMaster')" class="btn btn-success pull-right">Pull</button>                                           -->
+        </div>
+        
+        <!-- Output Module -->
+        <div class="container-fluid">
+            <div class="card">
+                <div [ngStyle]="{'color':'red','margin-left':'30px', 'font-family':'Courier New','font-size':'16px'}">
+                    {{validate}}
+                    <div>
+
+                <div style="float: right;"><a href="#" (click)="copyToClipboard()" class="myButton">Copy</a></div>
+
+                <hr>
+                <div fxLayout="row" class="output-block" style="font-family:Consolas;">
+                    <span *ngFor="let x of xloop">  
+                    <span [ngClass]="{'keyword': x =='SELECT' || x == 'FROM' || x == 'ON'  || x == 'JOIN' 
+                    || x == 'LEFT'  || x == 'RIGHT'  || x == 'INNER'  || x == 'FULL'  || x == 'CROSS' }"> 
+                        {{x}} 
+                        </span>
+                    </span>
+                </div>  
+            </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
