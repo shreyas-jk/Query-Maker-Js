@@ -1,7 +1,7 @@
 
 # SQL Query Building
 
-I created this tool just to explore and learn the basics about Angular Framework.
+I created this tool just to explore and learn the basics of Angular 7. It also means this was my first project in Angular Framework.
 
 This project runs along with WebApi written in C#, which is actually the brain of the project that generates the SQL query based on the inputs.
 API Link: https://github.com/angry-coder-room/Query-Maker-Api
