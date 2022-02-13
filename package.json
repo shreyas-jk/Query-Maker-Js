@@ -31,7 +31,7 @@
     "@angular/platform-browser-dynamic": "8.0.0",
     "@angular/platform-server": "8.0.0",
     "@angular/router": "8.0.0",
-    "ajv": "6.10.0",
+    "ajv": "6.12.3",
     "arrive": "2.4.1",
     "bootstrap": "4.3.1",
     "bootstrap-material-design": "4.1.2",
